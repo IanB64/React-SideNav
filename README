@@ -1,4 +1,4 @@
-# React-SideNav
+React-SideNav
 
 The SideNav component conncects to redux, gets the mainNav and navs from the sidenav reducer. 
   mainNav - object with keys: label, text, path
