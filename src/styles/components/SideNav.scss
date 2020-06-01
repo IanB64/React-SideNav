@@ -1,0 +1,75 @@
+.mainNav {
+  font-family: Lucida Sans Unicode, Sans-Serif;
+  color: #80001F;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 8px 10px;
+  line-height: 1.2em;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.sideNav {
+  max-width: 240px;
+  height: 100vh;
+  font-family: Lucida Sans Unicode, Sans-Serif;
+  color: black;
+  font-size: 13px;
+  font-weight: 500;
+}
+
+.selected {
+  color: #80001F;
+}
+
+.sideNav-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 10px 8px 20px;
+
+  &:hover {
+    cursor: pointer;
+    background-color: rgb(231, 231, 231);
+    color: #80001F;
+  }
+}
+
+.sideNav-item-content {
+  text-overflow: ellipsis;
+  word-wrap: break-word;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.sideNav-item-icon {
+  margin-right: 6px;
+}
+
+.sideNav-item-text {
+  width: 100%;
+}
+
+
+/* Solid border */
+hr.solid {
+  border: 1px solid rgb(230, 230, 230);
+  margin: 0px;
+}
+
+i {
+  margin-right: 15px;
+  margin: 0 0px 0px -3px;
+  border: solid black;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 2px;
+  transform: rotate(-45deg);
+}
+
+.sideNav-item-arrow-selected {
+  transform: rotate(45deg);
+}
