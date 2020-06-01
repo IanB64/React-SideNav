@@ -74,22 +74,3 @@ const mapStateToProps = (state) => {
 
 const SideNavItem = connect(mapStateToProps, { selectNav })(_SideNavItem);
 export default SideNavItem;
-
-
-/**
- * SideNavItem component connects to redux, gets the selectedNav and use selectNav
- * to update the selectedNav
- *
- * props:
- * depthStep - set to 10px
- * depth - initial to be 0, increase by 1 for every level.
- * item - one of the navs or the mainNav
- * selectedNav - one of the navs or the mainNav
- *  example:
- *  {
- *    label: 'bonding',
- *    text: 'Bonding',
- *    path: '/products-services/insurance-for-credit-unions/bonding',
- *    arrow: true,
- *  }
- */
