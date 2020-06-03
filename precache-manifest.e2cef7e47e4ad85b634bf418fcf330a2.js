@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "04db4554bc65061a4fb3c007f3769a6d",
+    "revision": "2cf39689a411ea386325669a4468269c",
     "url": "/react-sidenav/index.html"
   },
   {
-    "revision": "5c3ec206640dc160c9f7",
+    "revision": "f7f5359d34ef2b0fa81b",
     "url": "/react-sidenav/static/css/main.71154d58.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/react-sidenav/static/js/2.94e25a96.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "5c3ec206640dc160c9f7",
-    "url": "/react-sidenav/static/js/main.14e3e960.chunk.js"
+    "revision": "f7f5359d34ef2b0fa81b",
+    "url": "/react-sidenav/static/js/main.98a50a12.chunk.js"
   },
   {
     "revision": "205c17bfccdfbe987196",
