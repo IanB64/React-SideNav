@@ -6,7 +6,7 @@ import SideNav from "./components/SideNav";
 class App extends React.Component {
   render() {
     return (
-      <BrowserRouter history={history}>
+      <BrowserRouter history={history} basename={`${process.env.PUBLIC_URL}/`}>
         <SideNav />
 
         <Switch>
