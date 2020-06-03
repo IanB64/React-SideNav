@@ -1,5 +1,3 @@
-import { combineReducers } from 'redux';
-
 export const mainNavReducer = () => {
   return {
     label: 'cs-home',
