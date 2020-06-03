@@ -1,5 +1,12 @@
 React-SideNav
 
+Usage:
+  1. Clone this repo
+  2. cd into React-SideNav folder
+  3. run command: npm i
+  4. run command: npm run start
+
+
 The SideNav component conncects to redux, gets the mainNav and navs from the sidenav reducer. 
   mainNav - object with keys: label, text, path
     example:
@@ -24,7 +31,7 @@ SideNavItem component connects to redux, gets the selectedNav and use selectNav 
   
   example:
     {
-      label: 'our-people',
-      text: 'Our people',
-      path: '/cs-home/our-people',
+      label: 'about-us',
+      text: 'About Us',
+      path: '/home/about-us',
     }

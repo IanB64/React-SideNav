@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../styles/components/SideNav.scss';
 import { selectNav } from '../actions/sidenav';
 import { connect } from 'react-redux';
@@ -9,14 +10,14 @@ export class _SideNavItem extends React.Component {
   };
 
   render() {
-    const { label, text, items } = this.props.item;
+    const { label, text, items, path } = this.props.item;
     let className = this.props.className
       ? this.props.className
-      : 'sideNav-item';
+      : "sideNav-item";
 
-    if (className === 'sideNav-item' && this.props.selectedNav) {
+    if (className === "sideNav-item" && this.props.selectedNav) {
       if (label === this.props.selectedNav.label) {
-        className += ' selected';
+        className += " selected";
       }
     }
 
@@ -24,42 +25,41 @@ export class _SideNavItem extends React.Component {
       ? this.props.selectedNav.path.includes(label)
       : false;
 
-    let arrowClass = !collapse ? 'sideNav-item-arrow' : 'sideNav-item-arrow-selected'
+    let arrowClass = !collapse
+      ? "sideNav-item-arrow"
+      : "sideNav-item-arrow-selected";
 
     return (
-      <div className='navItem'>
-        <div className={className} onClick={() => this.onClick()}>
-          <div
-            style={{ paddingLeft: this.props.depth * this.props.depthStep }}
-            className='sideNav-item-content'
-          >
-            <div className='sideNav-item-text'>{text}</div>
-            {items ? <i className={arrowClass} /> : null}
+      <div className="navItem">
+        <Link className="link" to={path}>
+          <div className={className} onClick={() => this.onClick()}>
+            <div
+              style={{ paddingLeft: this.props.depth * this.props.depthStep }}
+              className="sideNav-item-content"
+            >
+              <div className="sideNav-item-text">{text}</div>
+              {items ? <i className={arrowClass} /> : null}
+            </div>
           </div>
-        </div>
-        <div className='subItems'>
-          {
-            collapse ?
-              (Array.isArray(items) ?
-                (
-                  <div>
+        </Link>
+        <div className="subItems">
+          {collapse ? (
+            Array.isArray(items) ? (
+              <div>
+                {items.map((subItem, index) => (
+                  <React.Fragment key={`${subItem.name}${index}`}>
                     {
-                      items.map((subItem, index) => (
-                        <React.Fragment key={`${subItem.name}${index}`}>
-                          {
-                            <SideNavItem
-                              depth={this.props.depth + 1}
-                              depthStep={this.props.depthStep}
-                              item={subItem}
-                            />
-                          }
-                        </React.Fragment>
-                      ))
+                      <SideNavItem
+                        depth={this.props.depth + 1}
+                        depthStep={this.props.depthStep}
+                        item={subItem}
+                      />
                     }
-                  </div>
-                ) : null
-              ) : null
-          }
+                  </React.Fragment>
+                ))}
+              </div>
+            ) : null
+          ) : null}
         </div>
       </div>
     );
