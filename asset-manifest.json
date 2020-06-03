@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/react-sidenav/static/css/main.71154d58.chunk.css",
-    "main.js": "/react-sidenav/static/js/main.69a909fe.chunk.js",
-    "main.js.map": "/react-sidenav/static/js/main.69a909fe.chunk.js.map",
+    "main.js": "/react-sidenav/static/js/main.14e3e960.chunk.js",
+    "main.js.map": "/react-sidenav/static/js/main.14e3e960.chunk.js.map",
     "runtime-main.js": "/react-sidenav/static/js/runtime-main.232cbf43.js",
     "runtime-main.js.map": "/react-sidenav/static/js/runtime-main.232cbf43.js.map",
-    "static/js/2.ab114f5b.chunk.js": "/react-sidenav/static/js/2.ab114f5b.chunk.js",
-    "static/js/2.ab114f5b.chunk.js.map": "/react-sidenav/static/js/2.ab114f5b.chunk.js.map",
+    "static/js/2.94e25a96.chunk.js": "/react-sidenav/static/js/2.94e25a96.chunk.js",
+    "static/js/2.94e25a96.chunk.js.map": "/react-sidenav/static/js/2.94e25a96.chunk.js.map",
     "index.html": "/react-sidenav/index.html",
-    "precache-manifest.91a34963e845bc3835f3dfdf51abae38.js": "/react-sidenav/precache-manifest.91a34963e845bc3835f3dfdf51abae38.js",
+    "precache-manifest.0ba3fbed96eb87c643b875e5f63429c7.js": "/react-sidenav/precache-manifest.0ba3fbed96eb87c643b875e5f63429c7.js",
     "service-worker.js": "/react-sidenav/service-worker.js",
     "static/css/main.71154d58.chunk.css.map": "/react-sidenav/static/css/main.71154d58.chunk.css.map",
-    "static/js/2.ab114f5b.chunk.js.LICENSE.txt": "/react-sidenav/static/js/2.ab114f5b.chunk.js.LICENSE.txt"
+    "static/js/2.94e25a96.chunk.js.LICENSE.txt": "/react-sidenav/static/js/2.94e25a96.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.232cbf43.js",
-    "static/js/2.ab114f5b.chunk.js",
+    "static/js/2.94e25a96.chunk.js",
     "static/css/main.71154d58.chunk.css",
-    "static/js/main.69a909fe.chunk.js"
+    "static/js/main.14e3e960.chunk.js"
   ]
 }
