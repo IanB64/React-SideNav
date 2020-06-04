@@ -133,6 +133,8 @@ class App extends React.Component {
                 path="/current-grad-students/degree-completion"
                 component={() => <DummyPage text="Degree completion" />}
               />
+              
+              <Route component={() => <DummyPage text='' invalid />} />
             </Switch>
           </div>
         </div>
