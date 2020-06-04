@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { location, withRouter, matchPath } from 'react-router';
 import '../styles/components/SideNav.scss';
 import { selectNav } from '../actions/sidenav';
 import { connect } from 'react-redux';
@@ -20,13 +19,14 @@ export class _SideNavItem extends React.Component {
       process.env.PUBLIC_URL,
       ""
     );
+    let pathEqual = currentPath === path || currentPath === path + '/'
 
     if (
       className === "sideNav-item" &&
-      (this.props.selectedNav || currentPath.localeCompare(path) === 0)
+      (this.props.selectedNav || pathEqual)
     ) {
       if (
-        currentPath.localeCompare(path) === 0 ||
+        pathEqual ||
         label === this.props.selectedNav.label
       ) {
         className += " selected";
@@ -86,4 +86,4 @@ const mapStateToProps = (state) => {
 };
 
 const SideNavItem = connect(mapStateToProps, { selectNav })(_SideNavItem);
-export default withRouter(SideNavItem);
+export default SideNavItem;
