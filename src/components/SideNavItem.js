@@ -16,7 +16,7 @@ export class _SideNavItem extends React.Component {
       ? this.props.className
       : "sideNav-item";
       
-    let currentPath = document.location.pathname.replace(`${process.env.PUBLIC_URL}/` ,"/")
+    let currentPath = document.location.pathname.replace(process.env.PUBLIC_URL ,"")
     
     if (className === "sideNav-item" && (this.props.selectedNav || currentPath.localeCompare(path) === 0)) {
       if (currentPath.localeCompare(path) === 0 || label === this.props.selectedNav.label) {

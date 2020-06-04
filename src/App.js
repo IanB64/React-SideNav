@@ -8,7 +8,7 @@ import "./App.scss";
 class App extends React.Component {
   render() {
     return (
-      <BrowserRouter history={history} basename={`${process.env.PUBLIC_URL}/`}>
+      <BrowserRouter history={history} basename={process.env.PUBLIC_URL}>
         <div className="container">
           <div className="side-nav">
             <SideNav />
