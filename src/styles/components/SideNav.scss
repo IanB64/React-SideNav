@@ -12,7 +12,8 @@
 }
 
 .sideNav {
-  max-width: 240px;
+  max-width: 250px;
+  min-width: 200px;
   height: 100vh;
   font-family: Lucida Sans Unicode, Sans-Serif;
   color: black;
@@ -22,6 +23,8 @@
 
 .selected {
   color: #80001F;
+  font-weight: bold;
+  background-color: rgb(231, 231, 231);
 }
 
 .sideNav-item {
@@ -51,6 +54,7 @@
 
 .sideNav-item-text {
   width: 100%;
+  padding-right: 10px;
 }
 
 

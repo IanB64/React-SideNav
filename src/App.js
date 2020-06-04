@@ -2,6 +2,7 @@ import React from 'react';
 import history from './history';
 import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
 import SideNav from './components/SideNav';
+import GithubCorner from 'react-github-corner';
 import DummyPage from './components/DummyPage';
 import './App.scss';
 
@@ -10,6 +11,11 @@ class App extends React.Component {
     return (
       <BrowserRouter history={history} basename={process.env.PUBLIC_URL}>
         <div className="container">
+          <div>
+            <GithubCorner href="https://github.com/IanB64/React-SideNav" 
+              target="_blank" rel="noopener noreferrer"
+            />
+          </div>
           <div className="side-nav">
             <SideNav />
           </div>

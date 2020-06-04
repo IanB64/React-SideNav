@@ -4,18 +4,12 @@ class DummyPage extends React.Component {
   render() {
     return (
       <div>
-        <h3>
+        <h2>
           This is the <span style={{ color: "red" }}>{this.props.text}</span>{" "}
           page
-        </h3>
-        <a
-          href="https://github.com/IanB64/React-SideNav"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Click here to check the code on GitHub
-        </a>
-        <p>This side navigation component is built in React and Redux.</p>
+        </h2>
+        <h4>Want to check the full code on GitHub? Click the link at the top-right corner!</h4>
+        <p>This page is a demo for the Side Navigation(SideNav) component built in React and Redux</p>
       </div>
     );
   }

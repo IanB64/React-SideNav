@@ -3,11 +3,14 @@ React-SideNav
 See a live demo here: https://ianb64.github.io/React-SideNav/
 
 Usage:
-  1. Clone this repo
-  2. cd into React-SideNav folder
-  3. make sure you have react, redux and react-redux installed, otherwise run: npm i react redux react-redux 
-  4. run command: npm i
-  5. run command: npm run start
+  1. Clone this repo: 
+      git clone https://github.com/IanB64/React-SideNav.git
+  2. Go into the repository:
+      cd React-SideNav
+  3. To install dependencies: 
+      npm i
+  4. To start development server: 
+      npm run start
 
 The SideNav component conncects to redux, gets the mainNav and navs from the sidenav reducer. 
   mainNav - object with keys: label, text, path
