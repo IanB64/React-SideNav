@@ -6,13 +6,11 @@ import SideNav from "./components/SideNav";
 class App extends React.Component {
   render() {
     return (
-      <BrowserRouter history={history} basename={`${process.env.PUBLIC_URL}/`}>
+      <BrowserRouter history={history}>
         <SideNav />
 
         <Switch>
-          <Route exact path="/">
-            <Redirect to="/cs-home" />
-          </Route>
+          <Route exact path="/" />
         </Switch>
       </BrowserRouter>
     );
